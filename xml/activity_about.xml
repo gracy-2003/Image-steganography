@@ -1,0 +1,130 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_ground_image"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Back Button -->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Back Button"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/arrow_back_button"
+            app:tint="#000000" />
+
+        <!-- About TextView -->
+        <TextView
+            android:id="@+id/aboutTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/backButton"
+            android:layout_alignTop="@id/backButton"
+            android:layout_marginTop="7dp"
+            android:text="About"
+            android:textColor="#000000"
+            android:textSize="28sp"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp" />
+
+        <!-- About Content Layout -->
+        <LinearLayout
+            android:id="@+id/aboutContentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/backButton"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <!-- Welcome Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:gravity="center"
+                android:paddingBottom="12dp"
+                android:text="Welcome to Image Steganography App!"
+                android:textColor="#000000"
+                android:textSize="22sp" />
+
+            <!-- Image Steganography Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Image Steganography is the art and science of hiding secret messages within digital images, making the presence of the message virtually undetectable. Unlike encryption, where the data is visible but scrambled, steganography conceals the existence of the data entirely."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:paddingBottom="8dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This technique has applications in secure communication, watermarking, and digital rights management. By embedding information within images, it allows users to transmit sensitive information discreetly."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:paddingBottom="8dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="In this app, Image Steganography is made simple and accessible, enabling users to encode messages into images securely and retrieve them effortlessly."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:paddingBottom="8dp" />
+
+            <!-- Features Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Features:"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="4dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Secure Encoding: Hide your messages inside images securely.\n• Easy Decoding: Extract hidden messages effortlessly.\n• Privacy First: Your data stays private within the app.\n• User-Friendly: Intuitive design for simple use.\n• Secret Key: Optional feature for enhanced security."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:paddingBottom="8dp" />
+
+            <!-- Future Updates Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Future Updates:"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="4dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We are continuously working to improve this app. Future updates may include advanced steganography algorithms, more customization options, and cross-platform support."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:paddingBottom="8dp" />
+
+            <!-- Thank You Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thank you for using the Image Steganography App. Your feedback is invaluable to us!"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:paddingBottom="8dp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

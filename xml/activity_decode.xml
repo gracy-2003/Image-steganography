@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_ground_image">
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Back Button"
+        android:padding="8dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/arrow_back_button" />
+
+    <TextView
+        android:id="@+id/userNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/backButton"
+        android:layout_alignTop="@id/backButton"
+        android:layout_marginTop="7dp"
+        android:text="User Name"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp" />
+
+    <ImageButton
+        android:id="@+id/settingsButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Settings Button"
+        android:padding="8dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_settings" />
+
+    <Button
+        android:id="@+id/selectImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userNameTextView"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#009688"
+        android:layout_marginTop="20dp"
+        android:text="Select Image" />
+
+    <ImageView
+        android:id="@+id/selectedImageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/selectImageButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:contentDescription="Selected Image"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent" />
+
+    <EditText
+        android:id="@+id/secretKeyEditText"
+        android:layout_width="333dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/selectedImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="Enter 6-Digit Secret Key"
+        android:inputType="number"
+        android:maxLength="6"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000" />
+
+    <Button
+        android:id="@+id/decodeButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/secretKeyEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#009688"
+        android:padding="10dp"
+        android:text="Decode"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/decodedTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/decodeButton"
+        android:layout_marginTop="20dp"
+        android:text="Decoded text will appear here"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:visibility="gone" />
+
+</RelativeLayout>

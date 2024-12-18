@@ -1,0 +1,51 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_ground_image"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Back Button -->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Back Button"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/arrow_back_button" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/termsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/backButton"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="19dp"
+            android:text="Terms and Policy"
+            android:textColor="#000000"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <!-- Content -->
+        <TextView
+            android:id="@+id/termsContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/termsTitle"
+            android:layout_marginTop="20dp"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:lineSpacingExtra="8dp"
+            android:text="Welcome to our Image Steganography App. Please read the following terms and policies carefully:\n\n1. **Usage Policy**:\n- This app is intended for securely encoding and decoding messages within images.\n- Users must ensure that the encoded content complies with all local laws and regulations.\n\n2. **Privacy Policy**:\n- Your data is stored locally and is not shared with any third parties.\n- We do not collect or store any sensitive information used within the app.\n\n3. **Intellectual Property**:\n- The app's design, code, and functionality are protected by intellectual property laws.\n- Unauthorized copying, distribution, or reverse-engineering is prohibited.\n\n4. **Limitation of Liability**:\n- We are not responsible for any misuse of the app or any data loss resulting from its use.\n- Users must ensure backups of encoded data/images.\n\n5. **Updates**:\n- We may provide updates or enhancements to improve user experience and security.\n- It is recommended to use the latest version for optimal performance.\n\n6. **Acceptance**:\n- By using this app, you agree to comply with these terms and policies.\n\nFor more details, please refer to the support documentation within the app." />
+    </RelativeLayout>
+</ScrollView>

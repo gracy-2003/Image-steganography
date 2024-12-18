@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:weightSum="5">
+
+    <ImageView
+        android:id="@+id/encodedImageView"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_weight="4"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:contentDescription="Encoded Image" />
+
+    <Button
+        android:id="@+id/saveImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="15dp"
+        android:minWidth="88dp"
+        android:maxWidth="120dp"
+        android:text="Save" />
+
+</LinearLayout>
+

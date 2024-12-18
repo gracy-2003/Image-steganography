@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/back_ground_image">
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="8dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Back Button"
+        android:padding="8dp"
+        android:src="@drawable/arrow_back_button"
+        android:scaleType="centerInside"
+        />
+
+    <!-- Title (FAQs) to the right of the Back Button -->
+    <TextView
+        android:id="@+id/faqTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/backButton"
+        android:layout_alignTop="@id/backButton"
+        android:layout_marginStart="16dp"
+        android:text="FAQs"
+        android:textColor="#000000"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <!-- FAQ Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/faqTitle"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Question 1 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Q1: How do I use this app?"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A1: Follow the on-screen instructions to encode and decode messages in images."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Question 2 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Q2: What file formats are supported?"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A2: The app supports popular image formats like PNG and JPEG."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Question 3 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Q3: How do I set a security key?"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A3: You can enter a secret key in the provided field before encoding the message."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Question 4 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Q4: Can I share encoded images?"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A4: Yes, you can share encoded images via messaging apps or email."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Question 5 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Q5: Is my data secure?"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A5: Yes, the app ensures that your messages are securely embedded and decoded."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Question 6 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Q6: What happens if I forget my security key?"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="A6: Without the correct security key, the message cannot be decoded."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Question 7 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Q7: Can I decode images encoded with other apps?"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A7: No, this app is designed to decode images encoded using its own algorithm."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Question 8 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Q8: How can I contact support?"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A8: Visit the Help &amp; Support section in the settings page for contact information."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_marginBottom="16dp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
