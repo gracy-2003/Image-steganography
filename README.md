@@ -7,27 +7,27 @@ The Image Steganography App is an Android application that allows users to secur
 
 **🚀 Features**
 
-**1.** Encode Messages: Hide secret text within images.
+**1.** **Encode Messages:** Hide secret text within images.
 
-**2.** Decode Messages: Extract the hidden text from steganographic images using a security PIN.
+**2.** **Decode Messages:** Extract the hidden text from steganographic images using a security PIN.
 
-**3.** User Authentication: Secure login and sign-up features to protect access.
+**3.** **User Authentication:** Secure login and sign-up features to protect access.
 
-**4.** Security PIN: Decode functionality requires a unique PIN for added security.
+**4.** **Security PIN:** Decode functionality requires a unique PIN for added security.
 
-**5.** Image Sharing: Share encoded images via apps like WhatsApp or email.
+**5.** **Image Sharing:** Share encoded images via apps like WhatsApp or email.
 
-**6.** Settings and Support: Dedicated Help and Support, FAQ, and Terms and Policy pages.
+**6.** **Settings and Support:** Dedicated Help and Support, FAQ, and Terms and Policy pages.
 
 
 **🛠️ Technology Stack**
 
-Language: Java
+**1. Language:** Java
 
-IDE: Android Studio
+**2. IDE:** Android Studio
 
-Database: SQLite
+**3. Database:** SQLite
 
-UI Design: XML
+**4. UI Design:** XML
 
-Steganography Library: Custom implementation
+**5. Steganography Library:** Custom implementation
